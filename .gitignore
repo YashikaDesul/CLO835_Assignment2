@@ -1,0 +1,15 @@
+# Ignore Terraform files
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore Terraform binary files
+terraform_1.7.2_linux_amd64.zip
+
+# Ignore key files
+assignkey
+assignkey.pub
+
+# Ignore Cloud9 configuration
+.c9/

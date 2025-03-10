@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql-pod
+  namespace: mysql-nmspc
+  labels:
+    app: mysql
+spec:
+  imagePullSecrets:
+    - name: ecr-registry-key
+  containers:
+    - name: mysql
+      image: 844188451376.dkr.ecr.us-east-1.amazonaws.com/mysql_repo:v1
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 3306
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: pw
