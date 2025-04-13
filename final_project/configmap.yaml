@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: final
+data:
+  BACKGROUND_IMAGE_KEY: new_background.jpg
+  GROUP_NAME: Group-13
+  GROUP_SLOGAN: Scaling the Future
